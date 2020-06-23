@@ -24,6 +24,7 @@ import java.util.List;
 
 public class ICompanyServiceImpl implements ICompanyService {
 
+    /*@param 'child' return TopLevelParent for company*/
     @Override
     public Company getTopLevelParent(Company child) {
 
@@ -36,12 +37,13 @@ public class ICompanyServiceImpl implements ICompanyService {
             company = company.getParent();
         }
         return company;
-
-
     }
 
+    /* @Method getEmployeeCountForCompanyAndChildren return all employees  */
+
     @Override
-    public long getEmployeeCountForCompanyAndChildren(Company company, List<Company> companies) {
-        return 0;
+    public long getEmployeeCountForCompanyAndChildren(Company company,
+                                                      List<Company> companies) {
+        return company.getEmployeesCount();
     }
 }

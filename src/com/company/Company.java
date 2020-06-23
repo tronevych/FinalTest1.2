@@ -21,19 +21,22 @@
 package com.company;
 
 public class Company {
-    // parent for this company nullable, when there is no parent for this company
-    private Company parent;
-    private long employeesCount;
 
-    //
+
+    private Company parent;// parent for this company nullable,
+    private long employeesCount;// when there is no parent for this company
+
+    // @method constructor for this class
     public Company() {
     }
-    //
+
+    // @method constructor with class elements
     public Company(Company parent, long employeesCount) {
         this.parent = parent;
         this.employeesCount = employeesCount;
     }
-//
+
+    // @method Getters and Setters for this class
     public Company getParent() {
         return parent;
     }
@@ -50,13 +53,12 @@ public class Company {
         this.employeesCount = employeesCount;
     }
 
+    // @method toString() for this class
     @Override
     public String toString() {
-        return "Company{" +
-                "parent=" + parent +
-                ", employeesCount=" + employeesCount +
+        return "Company { " +
+                "parent = " + parent +
+                ", employeesCount = " + employeesCount +
                 '}';
-
     }
-
 }

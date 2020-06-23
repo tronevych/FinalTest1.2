@@ -28,6 +28,7 @@ public interface ICompanyService {
      *                  (parent of parent of ...)
      * @return top level paren
      */
+
     Company getTopLevelParent(Company child);
 
     /**

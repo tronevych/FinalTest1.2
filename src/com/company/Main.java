@@ -4,7 +4,7 @@
  *
  * @version 23.06.2020
  * @author Serhii Tronevych
- *
+
  * Module 4 task Final
  *
  * Topic: COMPANY Service implementation - 15 points
@@ -44,7 +44,7 @@ public class Main {
         Company design = new Company(frontEnd,3);
         Company accounting = new Company(null,2);
 
-        // First test, child must to return chief
+        // First test, child must to return tchief
 
         System.out.println("For Chief, the parent company is: \n"
                 + service.getTopLevelParent(chief));
@@ -62,6 +62,8 @@ public class Main {
                 + service.getTopLevelParent(design));
         System.out.println("For Accounting, the parent company is: \n"
                 + service.getTopLevelParent(accounting));
+
+
 
 
     }
